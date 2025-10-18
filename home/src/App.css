@@ -1,0 +1,272 @@
+.background {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #101830, #05060b 65%);
+  padding: 2.5rem 1rem 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.app-shell {
+  width: min(960px, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: #f4f6ff;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  border-radius: 1.25rem;
+  background: rgba(18, 26, 56, 0.75);
+  border: 1px solid rgba(92, 121, 255, 0.25);
+  box-shadow: 0 20px 40px rgba(5, 8, 24, 0.45);
+}
+
+.app-title {
+  margin: 0;
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.app-subtitle {
+  margin: 0.35rem 0 0;
+  color: rgba(216, 225, 255, 0.75);
+  font-size: 0.95rem;
+}
+
+.composer-card,
+.messages-card {
+  padding: 1.75rem 2rem;
+  border-radius: 1.25rem;
+  background: rgba(14, 19, 40, 0.82);
+  border: 1px solid rgba(82, 108, 255, 0.2);
+  box-shadow: inset 0 1px 0 rgba(180, 200, 255, 0.04), 0 18px 32px rgba(4, 7, 21, 0.5);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.model-label {
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(79, 110, 255, 0.15);
+  border: 1px solid rgba(95, 125, 255, 0.35);
+  font-size: 0.85rem;
+  color: #dbe3ff;
+}
+
+.input-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: rgba(220, 230, 255, 0.86);
+}
+
+.text-area,
+.select-input {
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(92, 121, 255, 0.25);
+  background: rgba(3, 5, 16, 0.7);
+  color: #f7f9ff;
+  padding: 0.85rem 1rem;
+  font-size: 0.95rem;
+  margin-bottom: 1.25rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.text-area:focus,
+.select-input:focus {
+  border-color: rgba(120, 145, 255, 0.65);
+  box-shadow: 0 0 0 3px rgba(82, 108, 255, 0.25);
+}
+
+.text-area::placeholder {
+  color: rgba(208, 216, 255, 0.45);
+}
+
+.primary-button,
+.secondary-button {
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.85rem 1.2rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.primary-button {
+  background: linear-gradient(135deg, #5c7cff, #8f9fff);
+  color: #0a0d25;
+  box-shadow: 0 14px 24px rgba(90, 120, 255, 0.35);
+}
+
+.primary-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.primary-button:not(:disabled):hover {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 28px rgba(90, 120, 255, 0.4);
+}
+
+.secondary-button {
+  background: rgba(78, 105, 250, 0.2);
+  color: #e0e6ff;
+  border: 1px solid rgba(110, 135, 255, 0.45);
+  box-shadow: none;
+}
+
+.secondary-button:hover {
+  background: rgba(98, 125, 255, 0.35);
+}
+
+.message-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.message-item {
+  padding: 1.25rem 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(90, 120, 255, 0.25);
+  background: rgba(7, 11, 26, 0.7);
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.message-metadata {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+  color: rgba(200, 212, 255, 0.8);
+}
+
+.message-id {
+  font-weight: 600;
+  color: #9eb2ff;
+}
+
+.message-time {
+  color: rgba(210, 220, 255, 0.7);
+}
+
+.message-model {
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(92, 121, 255, 0.2);
+  border: 1px solid rgba(110, 135, 255, 0.35);
+}
+
+.message-body {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.message-label {
+  margin: 0 0 0.35rem;
+  font-weight: 600;
+  color: rgba(205, 218, 255, 0.85);
+}
+
+.cipher-text,
+.plain-text {
+  display: block;
+  padding: 0.65rem 0.8rem;
+  border-radius: 0.75rem;
+  background: rgba(14, 18, 35, 0.85);
+  border: 1px solid rgba(94, 122, 255, 0.25);
+  color: rgba(225, 233, 255, 0.88);
+  font-size: 0.9rem;
+  word-break: break-all;
+}
+
+.plain-text {
+  white-space: pre-wrap;
+}
+
+.hint-text {
+  margin: 0;
+  font-size: 0.85rem;
+  color: rgba(195, 206, 245, 0.7);
+}
+
+.response-section {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.status-box {
+  padding: 0.9rem 1.1rem;
+  border-radius: 0.9rem;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.status-box.info {
+  background: rgba(92, 121, 255, 0.16);
+  border: 1px solid rgba(120, 150, 255, 0.35);
+  color: #dbe3ff;
+}
+
+.status-box.error {
+  background: rgba(234, 83, 113, 0.18);
+  border: 1px solid rgba(255, 120, 145, 0.45);
+  color: #ffd9e2;
+}
+
+.loading-label {
+  font-size: 0.85rem;
+  color: rgba(203, 210, 255, 0.75);
+}
+
+.empty-state {
+  margin: 1rem 0 0;
+  color: rgba(213, 220, 255, 0.72);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 720px) {
+  .app-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .message-item {
+    padding: 1rem 1.1rem;
+  }
+}
