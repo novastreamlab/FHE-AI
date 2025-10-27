@@ -349,7 +349,7 @@ export function AIAgentApp() {
     <div className="app-shell">
       <header className="app-header">
         <div>
-          <h1 className="app-title">Zama Encrypted AI</h1>
+          <h1 className="app-title">FHE AI</h1>
           <p className="app-subtitle">Send confidential prompts and unlock homomorphic AI responses.</p>
         </div>
         <ConnectButton showBalance={false} />
