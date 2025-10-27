@@ -1,4 +1,4 @@
-# Zama Encrypted AI
+# FHE Encrypted AI
 
 A privacy-preserving AI interaction platform built on Fully Homomorphic Encryption (FHE) technology. This decentralized application enables users to submit encrypted prompts to AI models and receive encrypted responses, ensuring complete confidentiality throughout the entire interaction process.
 
@@ -32,7 +32,7 @@ A privacy-preserving AI interaction platform built on Fully Homomorphic Encrypti
 
 ## Overview
 
-Zama Encrypted AI is a groundbreaking decentralized application that combines blockchain technology with Fully Homomorphic Encryption (FHE) to create a privacy-first AI interaction platform. Unlike traditional AI services where your prompts and conversations are visible to service providers, Zama Encrypted AI ensures that your questions and AI responses remain encrypted end-to-end, protecting your intellectual property, sensitive queries, and personal data.
+FHE Encrypted AI is a groundbreaking decentralized application that combines blockchain technology with Fully Homomorphic Encryption (FHE) to create a privacy-first AI interaction platform. Unlike traditional AI services where your prompts and conversations are visible to service providers, Zama Encrypted AI ensures that your questions and AI responses remain encrypted end-to-end, protecting your intellectual property, sensitive queries, and personal data.
 
 The platform leverages Zama's FHEVM (Fully Homomorphic Encryption Virtual Machine) to perform computations on encrypted data, allowing AI models to process your prompts without ever seeing the actual content. This revolutionary approach makes it possible to benefit from powerful AI capabilities while maintaining complete privacy.
 
