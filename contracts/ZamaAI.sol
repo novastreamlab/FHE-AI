@@ -2,9 +2,9 @@
 pragma solidity ^0.8.24;
 
 import {FHE, eaddress, externalEaddress} from "@fhevm/solidity/lib/FHE.sol";
-import {SepoliaConfig} from "@fhevm/solidity/config/ZamaConfig.sol";
+import {ZamaEthereumConfig} from "@fhevm/solidity/config/ZamaConfig.sol";
 
-contract ZamaAI is SepoliaConfig {
+contract ZamaAI is ZamaEthereumConfig {
     struct Message {
         address user;
         string encryptedMessage;

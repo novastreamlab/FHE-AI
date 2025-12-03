@@ -1,7 +1,7 @@
 import type { Address } from 'viem';
 
 export const CONTRACT_ADDRESS = (
-  import.meta.env.VITE_CONTRACT_ADDRESS ?? '0x3e241687f81D94a3C4E0A04f3910E03e641B626f'
+  import.meta.env.VITE_CONTRACT_ADDRESS ?? '0x6645620193E09D5b5D05b5Da4051776C55E8c1B3'
 ) as Address;
 
 export const CONTRACT_ABI = [
